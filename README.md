@@ -8,8 +8,6 @@ Standard routines like `npm install` and `npm ci` are fundamentally flawed for l
 
 `npm ci` is a Mirror. It faithfully replicates every drift, every ghost dependency, and every bloated resolution from your lockfile into your build. It doesn't fix a broken state; it scales it.
 
----
-
 ## The Protocol
 
 Run this sequence to purge "lock drift" and re-establish a high-integrity baseline:
@@ -37,8 +35,6 @@ or
 rm -rf node_modules package-lock.json;npm install;npm update;rm -rf node_modules package-lock.json;npm install;
 ```
 
----
-
 ## Why this beats the "Standard"
 
 1. The Vacuum Principle
@@ -55,8 +51,6 @@ rm -rf node_modules package-lock.json;npm install;npm update;rm -rf node_modules
 ## What is Lock Drift?
 
 This protocol doesn't trust the existing state. It forces the package manager to re-calculate the entire graph from a vacuum. It is the only way to ensure that your environment matches your `package.json` requirements while purging years of "ghost" sub-dependencies.
-
----
 
 ## The Golden Rule: Analyze -> Reset -> Verify
 
