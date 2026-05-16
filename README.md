@@ -4,7 +4,7 @@
 
 ## The Problem: The "History of Mistakes"
 
-Standard routines like `npm install` and `npm ci` are fundamentally flawed for long-term project health. They rely on the `package-lock.json` as an absolute truth, but in a long-lived project, that lockfile is rarely "truth"—it is a history of mistakes.
+Standard routines like `npm install` and `npm ci` are fundamentally flawed for long-term project health. They rely on the `package-lock.json` as an absolute truth, but in a long-lived project, that lockfile is rarely truth, it is a history of mistakes.
 
 `npm ci` is a Mirror. It faithfully replicates every drift, every ghost dependency, and every bloated resolution from your lockfile into your build. It doesn't fix a broken state; it scales it.
 
