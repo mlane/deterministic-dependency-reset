@@ -35,7 +35,7 @@ or
 rm -rf node_modules package-lock.json;npm install;npm update;rm -rf node_modules package-lock.json;npm install;
 ```
 
-## Why this beats the "Standard"
+## Why this beats the Standard
 
 1. The Vacuum Principle
 
